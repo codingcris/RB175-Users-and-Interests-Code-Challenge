@@ -1,0 +1,19 @@
+<main>
+  <header>
+    <h1>User: <%= @requested_user %></h1>
+  </header>
+  <address class="contact_info">
+    <a href="mailto:<%= @users_data[@requested_user.to_sym][:email] %>">User Email</a>
+  </address>
+  <div class="interests">
+    <p><h3>Interests:</h3><%= @users_data[@requested_user.to_sym][:interests].join(", ") %></p>
+  </div>
+</main>
+  <div class="user-directory">
+    <h4 class="user-directory-heading">Other Users:</h4>
+    <ul>
+      <% @users.select {|user| user != @requested_user}.each do |user| %>
+      <li><a href="/users/<%= user %>"><%= user %></a></li>
+      <% end %>
+    </ul>
+  </div>

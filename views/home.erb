@@ -1,0 +1,8 @@
+<nav class="user-links">
+  <h1 class="user-links-heading">Users:</h1>
+  <ul>
+    <% @users.each do |user| %>
+    <li><a href="/users/<%= user %>"><%= user %></a></li>
+    <% end %>
+  </ul>
+</nav>
