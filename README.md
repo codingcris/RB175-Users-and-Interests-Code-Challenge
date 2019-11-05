@@ -1,4 +1,4 @@
-#Code Challenge: Users and Interests
+# Code Challenge: Users and Interests
 
 This project is part of Launch School's curriculum and the RB175 Networked Applications Course.
 This project aims to create a simple web application which acts as a small social media network.
@@ -7,7 +7,7 @@ The project should serve to solidify the student's knowledge of the aforemention
 them for a practical purpose. My implementation of the program is designed very minimally, having used no css, but the addition
 of css to the application will serve for good practice in the future.
 
-##Requirements
+## Requirements
   - homepage lists all user names
     -user names are found in users.yml file
   - each user name should link to a user page
